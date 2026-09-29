@@ -1,5 +1,5 @@
 package com.inviu.demo.core
 
-interface Order {
-    fun apply(state: RoverState): RoverState
+enum class Order {
+    FORWARD, BACKWARD, TURN_RIGHT, TURN_LEFT
 }
